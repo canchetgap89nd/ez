@@ -1,0 +1,17 @@
+/node_modules
+/public/hot
+/public/robots.txt
+/public/storage
+/public/plugins/tinymce/thumbs
+/public/plugins/tinymce/source
+/public/plugins/tinymce/filemanager/config/config.php
+/storage/*.key
+/vendor
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.env
+/server_node/prod.env.js

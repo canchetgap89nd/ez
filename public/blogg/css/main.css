@@ -1,0 +1,478 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 
+}
+a, a:active, a:hover, a:focus {
+	color: unset;
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	list-style: none;
+}
+
+/*
+css header
+ */
+.bg-header {
+	height: 213px;
+    width: 100%;
+    background-image: url(../images/banner-head.png);
+    background-position: top left;
+    background-size: 100% 100%;
+}
+.navig {
+	background-color: #e3e3e3;
+	display: inline-block;
+	width: 100%;
+	vertical-align: middle;
+}
+.titleNav {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 0;
+	padding: 10px 0;
+	color: #333333;
+}
+.txtNav {
+	color: #666;
+ 	font-size: 15px;
+	transition: all 0.3s;
+}
+.txtNav:hover {
+	color: #333;
+}
+.navItem {
+    padding: 10px 0;
+    line-height: 15px;
+}
+.menu-sub {
+	padding-bottom: 48px;
+}
+.menu-sub li {
+	padding-left: 12px;
+    position: relative;
+}
+.menu-sub li .fa-circle {
+	font-size: 7px;
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+.btSlideUpNav {
+    font-size: 20px;
+    color: #666;
+    display: inline-block;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.btSlideUpNav:hover {
+	color: #333 !important;
+}
+.underNav {
+	padding: 10px 0;
+}
+.navBox {
+	display: none;
+	transition: all 0.3s;
+}
+#checkboxToggle{
+    display: none;
+}
+#checkboxToggle:checked ~ .navBox {
+    display: block;
+}
+.titleBlock {
+	margin: 20px 0;
+	font-size: 25px;
+	color: #000;
+}
+.headPostIt {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+}
+.headPostIt img {
+	width: 100%;
+	vertical-align: middle;
+}
+.wrappLabel {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.catLabel {
+	position: relative;
+	background-color: #ffc000;
+	color: #fff;
+	display: inline-block;
+	padding: 5px 30px;
+}
+.catLabel:after {
+	border-top: 15px solid #ffc000;
+	border-left: 15px solid #ffc000;
+	border-bottom: 15px solid transparent;
+	border-right: 15px solid transparent;
+	content: '';
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+.titlePost {
+	width: 100%;
+    height: 40px;
+	margin-top: 0;
+	line-height: 20px;
+	font-size: 15px;
+}
+.titlePostIt a {
+    position: relative;
+	font-weight: 700;
+	color: #000;
+	text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.lsIt {
+	padding-left: 20px;
+	position: relative;
+}
+.lsIt .fa-circle {
+	position: absolute;
+	left: 0;
+	top: 6px;
+	font-size: 7px;
+	color: #999999;
+}
+.txtLsPostIt {
+	font-size: 14px;
+	color: #999999;
+}
+.postItem {
+	display: inline-block;
+	margin-bottom: 20px;
+ 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.postItem:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.bodyPostIt {
+	display: inline-block;
+    vertical-align: middle;
+    padding: 10px 20px;
+}
+
+.searchBox {
+	outline: 0;
+	float: left;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	display: inline-block;
+	width: 100%;
+}
+.searchBox > .textbox {
+  outline: 0;
+  height: 42px;
+  width: 80%;
+  line-height: 42px;
+  padding: 0 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #212121;
+  border: 0;
+  float: left;
+  -webkit-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.searchBox > .textbox:focus {
+  outline: 0;
+  background-color: #FFF;
+}
+
+.searchBox > .button {
+  outline: 0;
+  background: none;
+  background-color: rgba(38, 50, 56, 0.8);
+  float: left;
+  height: 42px;
+  width: 20%;
+  text-align: center;
+  line-height: 42px;
+  border: 0;
+  color: #FFF;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 16px;
+  text-rendering: auto;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition: background-color .4s ease;
+  transition: background-color .4s ease;
+  -webkit-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.searchBox > .button:hover {
+  background-color: rgba(0, 150, 136, 0.8);
+}
+.slideBar {
+	padding-top: 67px;
+	margin-bottom: 30px;
+}
+.socialBlock {
+	display: inline-block;
+	width: 100%;
+	vertical-align: middle;
+	margin-top: 20px;
+}
+.mostBlock {
+	display: inline-block;
+	width: 100%;
+	vertical-align: middle;
+}
+.ttBlock {
+	font-size: 17px;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.itemMost {
+	display: inline-block;
+	width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.lsMost .itemMost:first-child {
+	padding-top: 0;
+}
+.lsMost .itemMost:last-child {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+.imgMost {
+	display: inline-block;
+	width: 20%;
+	border-radius: 5px;
+	overflow: hidden;
+	float: left;
+}
+.infoMost {
+	display: inline-block;
+	width: 80%;
+	float: left;
+	padding-left: 10px;
+}
+.ttPostMost {
+    width: 100%;
+    height: 35px;
+    margin-top: 0;
+    line-height: 18px;
+    font-size: 14px;
+}
+.desMost {
+	margin: 0;
+	display: inline-block;
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.mostBlock {
+	margin-top: 10px;
+	padding: 10px 15px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.taskbar {
+	background-color: #39a908;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	padding: 15px;
+}
+.ttTaskBar {
+	font-size: 17px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.innerTsBar {
+	display: inline-block;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+.ttUper {
+	text-transform: uppercase;
+}
+.btJoin {
+	background-color: rgba(38, 50, 56, 0.8);
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    color: #fff;
+    display: inline-block;
+}
+.btJoin:hover, .btJoin:focus, .btJoin:active {
+	background-color: #000
+	color: #fff;
+}
+.addressRow {
+	text-align: center;
+	font-size: 15px;
+	color: #333333;
+}
+.contactBlock {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.breadcrumb-block .breadcrumb {
+	background-color: #fff;
+	padding-left: 0;
+}
+.ttPost {
+	margin-top: 31px;
+	font-size: 17px;
+	font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.txtUnderTt {
+	color: #999999;
+	margin-right: 15px;
+	font-size: 13px;
+}
+.shareOval {
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    transition: all 0.3s;
+    margin-right: 5px;
+}
+.shareOval:hover, .shareOval:active, .shareOval:focus {
+	background-color: #000;
+	color: #fff;
+}
+.shareOval:last-child {
+	margin-right: 0;
+}
+.underTitle {
+    display: flex;
+    justify-content: space-between;
+}
+.acLeft {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.acRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentPost {
+	margin-top: 20px;
+	font-size: 13px;
+	color: #000;
+}
+.underContent {
+	margin-top: 20px;
+}
+.socialComment {
+	margin-top: 10px;
+}
+.imageThumb {
+	object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+}
+.thumbBig {
+ 	height: 200px;
+}
+.thumbSmall {
+	height: 60px;
+}
+.thumbMedium {
+	height: 150px;
+}
+.contentPost {
+	font-size: 17px;
+}
+.contentPost img {
+	max-width: 100%;
+	height: auto;
+}
+.lnNav {
+	font-size: 17px;
+	font-weight: 700;
+}
+.homeIcon {
+	font-size: 24px;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+/* styles for '...' */ 
+.titlePostIt a {
+  overflow: hidden;
+  position: relative;
+  padding-right: 1em;
+}
+/* create the ... */
+.titlePostIt a:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.titlePostIt a:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+
+/*responsive*/
+@media only screen and (max-width: 414px) {
+	.breadcrumb-block, .txtUnderTt.eye-block, .txtUnderTt.share-block {
+		display: none;
+	}
+	.bg-header {
+		height: 90px;
+	}
+}
+
+
+

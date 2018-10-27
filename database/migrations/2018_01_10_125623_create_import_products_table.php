@@ -1,0 +1,39 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateImportProductsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('import_products', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('import_code', 50);
+            $table->integer('user_id')->unsigned();
+            $table->integer('user_id_cancel')->unsigned()->default(0);
+            $table->integer('total_quantity');
+            $table->integer('inventory');
+            $table->integer('total_amount');
+            $table->boolean('can_destroy');
+            $table->string('status', 50);
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('import_products');
+    }
+}

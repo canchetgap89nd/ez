@@ -1,0 +1,344 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.head-div {
+	background-color: #00b140;
+	display: inline-block;
+	width: 100%;
+	vertical-align: middle;
+	height: 60px;
+	padding: 20px 0;
+}
+.inner-head {
+	position: relative;
+}
+.inner-head h3 {
+	font-size: 18px;
+	color: #fff;
+	margin: 0;
+}
+.body-div {
+	overflow: hidden;
+}
+.cl-left {
+	height: calc(100vh - 60px);
+	overflow: hidden;
+	float: left;
+	padding: 25px;
+}
+.form-info h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+.form-info input {
+	border-radius: 0;
+	color: #616161;
+}
+.form-info button {
+	border-radius: 0;
+	border: 0;
+}
+.sbProfile {
+	background-color: #00b140;
+	border-color: #00b140;
+	float: right;
+}
+.sbProfile:hvoer, .sbProfile:active, .sbProfile:focus {
+	background-color: #398439;
+	border-color: #398439;
+}
+.form-info button.btn-danger {
+	background-color: #701e1e;
+}
+.title-cl {
+	padding: 0 10px;
+	font-size: 20px;
+	color: #000;
+	margin: 0 0 10px 0;
+	text-transform: uppercase;
+	line-height: 30px;
+}
+.text-red {
+	color: #ff0000;
+}
+.md-checkbox {
+    position: relative;
+    margin: 0;
+    display: inline-block;
+}
+.md-checkbox input[type="checkbox"] {
+    outline: 0;
+    margin: 0 10px 0 0;
+    opacity: 0;
+}
+.md-checkbox label {
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.md-checkbox label img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.md-checkbox label span {
+	margin-left: 10px;
+    width: 270px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    top: 5px;
+}
+.md-checkbox label:before {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.54);
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background .3s;
+}
+.md-checkbox input[type="checkbox"]:checked + label:before {
+    background: #fff;
+    border: none;
+}
+.md-checkbox input[type="checkbox"]:checked + label:after {
+    transform: rotate(-45deg);
+    top: 15px;
+    left: 2px;
+    width: 12px;
+    height: 6px;
+    border: 2px solid #00b140;
+    border-top-style: none;
+    border-right-style: none;
+}
+.md-checkbox label:before, .md-checkbox label:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+.list-style-none {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list-item {
+	max-height: 80%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.list-item li {
+	padding: 10px;
+	transition: all 0.3s ease;
+	position: relative;
+	cursor: pointer;
+}
+.list-item li:hover {
+	background-color: #ddd;
+}
+.list-item li:hover .destroyStaff {
+	display: block;
+}
+.list-item li .destroyStaff {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #00b140;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: none;
+}
+.list-item li.active {
+	background-color: #ddd;
+}
+.cl-mid {
+	height: calc(100vh - 60px);
+    display: inline-block;
+    float: left;
+}
+.cl-gray {
+	background-color: #f6f6f6;
+}
+.cl-white {
+	background-color: #fff;
+}
+.cl-ls {
+	padding: 25px;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.help-inline {
+	margin-top: 5px;
+    margin-bottom: 10px;
+    margin: 5px 0 10px 30px;
+    color: #737373;
+    display: inline-block;
+}
+.list-page-staff {
+	padding-left: 50px;
+	padding-bottom: 17px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.list-page-staff .li-page-staff {
+	float: left;
+	padding: 0 5px;
+	display: inline-block;
+	font-style: italic;
+	color: #000 !important;
+	text-decoration: underline;
+}
+.li-roles {
+	position: relative;
+	padding: 0 5px;
+}
+.li-roles .destroyBtn {
+    position: absolute;
+    right: 10px;
+    color: #8e9398;
+    top: 100%;
+    font-size: 15px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.li-roles .destroyBtn:hover {
+	color: #1f1f1f;
+}
+.list-t1 {
+	max-height: 80%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.list-far {
+	margin-top: 25px;
+	position: relative;
+}
+
+.cl-bor-lef {
+	border-left: 1px solid #ddd;
+	height: calc(100vh - 60px);
+}
+.container-radio .radio label {
+	font-weight: 700;
+}
+.container-radio .radio p {
+	padding-left: 20px;
+}
+.more-info {
+	padding-left: 20px;
+	text-decoration: none;
+	color: #0033ff;
+}
+.bt-group-t {
+	margin-top: 35px;
+	display: inline-block;
+	width: 100%;
+}
+.bt-group-t button {
+	border-radius: 0;
+}
+#message {
+	margin: 10px 0;
+	display: none;
+}
+.background-loading {
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    display: none;
+}
+.icon-loading {
+	position: fixed;
+	top: 45%;
+	left: 50%;
+}
+.box-loading {
+    background-color: #fff;
+    z-index: 999;
+    display: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.box-loading .icon-loading {
+	position: absolute;
+	top: 45%;
+	left: 45%;
+}
+.pages-manager {
+	text-decoration: none !important;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.pages-manager img {
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.pages-manager span.txtNameStaff {
+	text-decoration: none !important;
+	color: #000;
+	font-weight: bold;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.error__control {
+	margin-top: 5px;
+	color: #ff0000;
+}
+.cl-guide {
+	padding: 25px;
+}
+.boxHelper {
+	padding: 0 10px;
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+}
+.title-cl-r {
+	font-size: 18px;
+	color: #000;
+	font-weight: 700;
+	margin: 0 0 10px 0;
+	line-height: 30px;
+}
+.sbRole {
+	float: left;
+}
+.head-div .boxLogout {
+	position: absolute;
+	top: -5px;
+	right: 20px;
+}
+.head-div .boxLogout .hr-logout {
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+.li-roles img {
+	height: 24px;
+	width: 24px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.boxRoles {
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ddd;
+}
